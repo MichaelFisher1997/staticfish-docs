@@ -31,6 +31,13 @@ export default defineConfig({
       ],
     }),
   ],
+  server: {
+    allowedHosts: [
+      'dk0kk00o04wo4kwkkwoo8k4o.michaelfisher.tech',
+      // Allow all subdomains as well
+      '.michaelfisher.tech',
+    ],
+  },
   vite: {
     plugins: [tailwindcss()],
 
