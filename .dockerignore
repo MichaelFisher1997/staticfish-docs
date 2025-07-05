@@ -1,0 +1,26 @@
+# Git and Docker files
+.git
+.gitignore
+.dockerignore
+Dockerfile.prod
+
+# Dependencies
+node_modules
+
+# Build output
+dist/
+.astro/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.production
+
+# Development-specific files
+README.md
+.vscode/

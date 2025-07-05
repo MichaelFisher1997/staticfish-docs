@@ -1,36 +1,32 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Welcome to staticfish
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  title: 'Welcome to staticfish Docs'
+  tagline: 'All the documentation you need in one place.'
   actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    - text: View Guides
+      link: /git/
+      variant: primary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Get Started
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+Here you'll find documentation for the tools and processes we use at staticfish.
+
+<CardGrid>
+	<Card title="Git" icon="git-branch">
+		Learn about our Git workflow and common commands.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Node.js & Bun" icon="code">
+		Guides for using Node.js and Bun in our projects.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Astro" icon="rocket">
+		How we build fast websites with Astro.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Resend" icon="email">
+		Documentation for sending emails with Resend.
 	</Card>
 </CardGrid>
