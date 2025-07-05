@@ -1,19 +1,16 @@
-FROM oven/bun:latest AS runtime
-
+FROM oven/bun:latest as build
 WORKDIR /app
 
-COPY package.json bun.lock ./
-
+COPY package*.json ./
 RUN bun install
 
 COPY . .
-
 RUN bun run build
 
-ENV HOST=0.0.0.0
-ENV PORT=3000
+FROM oven/bun:latest as prod
+WORKDIR /app
+COPY --from=build /app/dist ./dist
 
 EXPOSE 3000
-
-CMD ["astro", "dev", "--port", "3000", "--host", "0.0.0.0"]
+CMD ["bunx", "serve", "./dist", "-l", "3000"]
 

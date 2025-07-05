@@ -5,6 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'http://localhost:3000',
+  base: '/',
   integrations: [
     starlight({
       title: 'staticfish',
@@ -31,13 +33,6 @@ export default defineConfig({
       ],
     }),
   ],
-  server: {
-    allowedHosts: [
-      'dk0kk00o04wo4kwkkwoo8k4o.michaelfisher.tech',
-      // Allow all subdomains as well
-      '.michaelfisher.tech',
-    ],
-  },
   vite: {
     plugins: [tailwindcss()],
 
