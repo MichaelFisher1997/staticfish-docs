@@ -33,8 +33,6 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
-    preview: {
-      allowedHosts: ['.michaelfisher.tech'],
-    },
+
   },
 });
