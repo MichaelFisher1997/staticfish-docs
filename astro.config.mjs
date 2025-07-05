@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:3000',
+  site: 'https://dk0kk00o04wo4kwkkwoo8k4o.michaelfisher.tech',
   base: '/',
   integrations: [
     starlight({
